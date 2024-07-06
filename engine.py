@@ -6,7 +6,7 @@ def flip(sprites):
 
 def load_sprite_sheets(entity, width, height, direction=False):
     path = join("resources", "entities", entity)
-    images = [f for f in listdir(path) if isfile(join(path, f))]
+    images = [f for f in listdir(path) if isfile(join(path, f)) and f.endswith("png")]
 
     all_sprites = {}
 
